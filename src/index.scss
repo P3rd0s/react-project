@@ -1,0 +1,26 @@
+
+html {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+html, body {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+
+  font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+  font-style: normal;
+  font-weight: 600;
+
+  height: 100%;
+
+  background: radial-gradient(circle, rgba(186,105,181,1) 0%, rgba(29,23,24,1) 100%);
+}

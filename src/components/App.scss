@@ -1,0 +1,62 @@
+@import "src/styles/SPA-style";
+
+$back: #2b2e3b;
+
+
+.root {
+  width: 375px;
+  height: 812px;
+  border-radius: 40px;
+
+  background: url("../styles/pictures/1.png") no-repeat, url("../styles/pictures/2.png") no-repeat bottom, $back;
+
+  position: relative;
+}
+
+
+
+//Page routing animation
+.page {
+
+  width: 100%;
+  height: 100%;
+
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.page-enter {
+  opacity: 0;
+  transform: translateX(-100%);
+
+  &.back {
+    transform: translateX(100%);
+  }
+}
+
+.page-enter-active {
+  opacity: 1;
+  transition: opacity 300ms, transform 300ms;
+
+  &, &.back {
+    transform: translateX(0);
+  }
+}
+
+.page-exit {
+  opacity: 1;
+}
+
+.page-exit-active {
+  opacity: 0;
+  transform: translateX(100%);
+  transition: opacity 300ms, transform 300ms;
+
+  &.forward {
+    transform: translateX(-100%);
+  }
+}
+
+
+

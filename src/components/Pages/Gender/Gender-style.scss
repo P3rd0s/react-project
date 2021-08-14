@@ -1,0 +1,52 @@
+@import "../../../styles/SPA-style";
+
+
+.female-image {
+  width: 156px;
+  height: 152px;
+
+  margin: auto auto auto 5px;
+
+  background: url("../../../styles/pictures/female.png");
+}
+
+.male-image {
+  width: 124px;
+  height: 138px;
+
+  margin: auto auto auto 30px;
+
+  background-image: url("../../../styles/pictures/male.png");
+}
+
+.container .container__content {
+  .card {
+
+    height: 233px;
+    width: 158px;
+
+    padding-bottom: 14px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+
+    border-radius: 25px;
+
+    background: linear-gradient(180deg, #353744 0%, #191B28 100%);
+
+    &.checked {
+      box-shadow: inset 4px 4px 8px rgba(11, 11, 17, 0.91), inset -1px -1px 13px rgba(255, 255, 255, 0.34);
+      color: white;
+    }
+
+    &.unchecked {
+      @include interacting(-1px -1px 13px rgba(255, 255, 255, 0.34), 4px 4px 8px rgba(11, 11, 17, 0.91));
+      color: #6D707D;
+    }
+
+    transition: all 0.2s ease;
+
+  }
+}

@@ -1,0 +1,67 @@
+@import "src/styles/SPA-style";
+
+.input__title {
+  color: #A4A7B4;
+  font-size: 16px;
+  line-height: 19px;
+
+  padding-left: 20px;
+  margin-bottom: 6px;
+}
+
+.input__wrapper {
+  max-width: 297px;
+  width: 297px;
+  height: 44px;
+
+
+  padding: 0 16px 0 25px;
+  margin-bottom: 29px;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  border: none;
+  border-radius: 50px;
+
+  background: #292B38;
+
+  box-shadow: inset 4px 4px 8px rgba(11, 11, 17, 0.91), inset -1px -1px 13px rgba(255, 255, 255, 0.34);
+
+  .input__field {
+
+    color: white;
+    font-size: 18px;
+    line-height: 21px;
+    font-weight: 600;
+
+    width: 170px;
+
+    background: transparent;
+    border: none;
+
+    /* Chrome, Safari, Edge, Opera */
+    &::-webkit-outer-spin-button,
+    &::-webkit-inner-spin-button {
+      -webkit-appearance: none;
+      margin: 0;
+    }
+
+    /* Firefox */
+    &[type=number] {
+      -moz-appearance: textfield;
+    }
+
+    &:focus, &:active {
+      outline: none;
+    }
+  }
+
+  .input__unit {
+    color: #C2C9D4;
+    font-size: 14px;
+    line-height: 17px;
+
+  }
+}
